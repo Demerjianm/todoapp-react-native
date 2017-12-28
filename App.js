@@ -1,3 +1,5 @@
+//from within project => open ios/todo.xcodeproj/
+
 import React, { Component } from 'react';
 import {
   Platform,
@@ -117,7 +119,7 @@ class App extends Component {
       ...item,
       complete
     }))
-    this.setSource(newItems, filterItems(this.state.filter. newItems), { allComplete: complete })
+    this.setSource(newItems, filterItems(this.state.filter, newItems), { allComplete: complete })
     console.table(newItems)
     this.setState({
       items: newItems,
